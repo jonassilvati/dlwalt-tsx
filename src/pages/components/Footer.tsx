@@ -96,31 +96,6 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
-              <h3 className="widget-title">Formas de Pagamento</h3>
-              <ul style={{ listStyle: "none" }}>
-                <div className="row">
-                  <li>
-                    <i
-                      style={{ fontSize: 50, margin: "0px 5px 0px 5px" }}
-                      className="fab fa-cc-stripe"
-                    />
-                  </li>
-                  <li>
-                    <i
-                      style={{ fontSize: 50, margin: "0px 5px 0px 5px" }}
-                      className="fab fa-cc-visa"
-                    />
-                  </li>
-                  <li>
-                    <i
-                      style={{ fontSize: 50, margin: "0px 5px 0px 5px" }}
-                      className="fab fa-cc-mastercard"
-                    />
-                  </li>
-                </div>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
