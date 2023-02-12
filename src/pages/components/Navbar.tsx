@@ -104,9 +104,6 @@ const Navbar = () => {
                               </li>
                             </ul>
                           </li>
-                          <li>
-                            <a href="/staffs">Staffs</a>
-                          </li>
                         </ul>
                       </li>
                       <li className="nav-item dropdown">

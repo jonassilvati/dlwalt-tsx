@@ -4,8 +4,8 @@ const SectionServices = () => {
       <div className="container">
         <div className="row text-center">
           <div className="col-12">
-            <h2 className="section-title">Nós somos especialistas</h2>
-            <h3 className="section-sub-title">No que fazemos</h3>
+            <h2 className="section-title"  data-aos="fade-up-right">Nós somos especialistas</h2>
+            <h3 className="section-sub-title" data-aos="fade-up-left">No que fazemos</h3>
           </div>
         </div>
         <div className="row">
@@ -76,8 +76,8 @@ const SectionServices = () => {
             <img
               loading="lazy"
               className="img-fluid"
-              src="https://cdn.discordapp.com/attachments/778691566168440854/1003739260102398002/Sem_titulo-1.svg"
-              alt="service-avater-image"
+              src="https://cdn.discordapp.com/attachments/893220475663187968/1074187810208223312/tower.png"
+              alt="Torre de energia"
             />
           </div>
           <div className="col-lg-4 mt-5 mt-lg-0 mb-4 mb-lg-0">

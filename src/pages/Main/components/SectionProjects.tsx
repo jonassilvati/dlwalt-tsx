@@ -41,12 +41,12 @@ const SectionProjects = () => {
       <div className="container">
         <div className="row text-center">
           <div className="col-lg-12">
-            <h2 className="section-title">Trabalho de Excelência</h2>
-            <h3 className="section-sub-title">Projetos Recentes</h3>
+            <h2 className="section-title" data-aos="flip-left">Trabalho de Excelência</h2>
+            <h3 className="section-sub-title" data-aos="flip-right">Projetos Recentes</h3>
           </div>
         </div>
 
-        <Swiper
+        <Swiper  data-aos="flip-up"
           effect={"coverflow"}
           autoplay={{
             delay: 2500,
