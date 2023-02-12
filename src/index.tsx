@@ -7,14 +7,16 @@ import {
 } from "react-router-dom";
 
 import './index.css';
-import Contact from './pages/Contact';
-import Bv from './pages/Integrations/Bv';
 
 import Main from './pages/Main';
-import Policy from './pages/Policy';
 import Projects from './pages/Projects';
+import ProjectsSingle from './pages/Projects/single';
 import Services from './pages/Services';
+import Policy from './pages/Policy';
 import Terms from './pages/Terms';
+import Vacancies from './pages/Vacancies';
+import Bv from './pages/Integrations/Bv';
+import Contact from './pages/Contact';
 
 import reportWebVitals from './utils/reportWebVitals';
 
@@ -27,9 +29,10 @@ root.render(
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/projetos" element={<Projects />} />
-         {/*<Route path="/projetos/:id" element={<ProjectsSingle content={} />} /> */}
+         <Route path="/projetos/:id" element={<ProjectsSingle />} />
         <Route path="/servicos" element={<Services />} />
         {/*<Route path="/servicos/:id" element={<ServicesSingle content={} />} /> */}
+        <Route path="/vagas" element={<Vacancies />} />
         <Route path="/politica" element={<Policy />} />
         <Route path="/termos" element={<Terms />} />
         <Route path="/contato" element={<Contact />} />

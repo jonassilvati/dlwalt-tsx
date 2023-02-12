@@ -1752,6 +1752,15 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   margin-bottom: 40px;
 }
 
+.service-box-title-services-page a {
+  color: #000000;
+}
+
+.service-box-title-services-page a:hover {
+  color: var(--main-color);
+}
+
+
 .service-box-title {
   font-size: 16px;
   margin: 0 0 10px;

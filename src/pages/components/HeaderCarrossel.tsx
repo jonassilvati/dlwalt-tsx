@@ -10,10 +10,10 @@ const HeaderCarrossel = () => {
             "url(https://cdn.discordapp.com/attachments/893220475663187968/1072349661110730792/Sem_titulo-1.jpg)",
         }}
       >
-        <div className="slider-content">
+        <div className="slider-content text-left">
           <div className="container h-100">
             <div className="row align-items-center h-100">
-              <div className="col-md-12 text-center">
+              <div className="col-md-12">
                 <h2 className="slide-title" data-animation-in="slideInLeft">
                   6 anos de excelência em
                 </h2>
@@ -88,10 +88,10 @@ const HeaderCarrossel = () => {
             "url(https://cdn.discordapp.com/attachments/893220475663187968/1045785467448205373/header_1.jpg)",
         }}
       >
-        <div className="slider-content">
+        <div className="slider-content text-left">
           <div className="container h-100">
             <div className="row align-items-center h-100">
-              <div className="col-md-12 text-center">
+              <div className="col-md-12">
                 <h2 className="slide-title" data-animation-in="slideInLeft">
                   Orçamento
                 </h2>
