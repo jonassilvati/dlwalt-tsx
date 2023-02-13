@@ -14,15 +14,7 @@ import "./css/projects.css";
 import { getAllItems } from "../../../services/database";
 import LoadingServer from "../../components/LoadingServer";
 
-const SectionProjects = () => {
-  const [data, setData] = React.useState<any[]>([]);
-
-  React.useEffect(() => {
-    getAllItems("dataWebSite/projects").then((response: any) => {
-      setData(response);
-    });
-  }, []);
-
+const SectionProjects = ({data}:any) => {
   return (
     <section id="project-area" className="project-area solid-bg">
       <div className="container">
@@ -61,7 +53,7 @@ const SectionProjects = () => {
             modules={[Autoplay, EffectCoverflow, Pagination]}
             className="mySwiper"
           >
-            {data.map((project) => {
+            {data.map((project:any) => {
               return (
                 <SwiperSlide key={project.key}>
                   <div

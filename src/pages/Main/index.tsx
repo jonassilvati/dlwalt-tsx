@@ -1,4 +1,5 @@
 import React from "react";
+import { getAllItems } from "../../services/database";
 import Footer from "../components/Footer";
 import HeaderCarrossel from "../components/HeaderCarrossel";
 import Navbar from "../components/Navbar";
@@ -9,6 +10,14 @@ import SectionServices from "./components/SectionServices";
 import SectionTestimonial from "./components/SectionTestimonial";
 
 const Main = () => {
+  const [projects, setProjects] = React.useState<any[]>([]);
+
+  React.useEffect(() => {
+    getAllItems("dataWebSite/projects").then((response: any) => {
+      setProjects(response);
+    });
+  }, []);
+  
   return (
     <div className="body-inner">
       <Navbar />
@@ -17,7 +26,7 @@ const Main = () => {
       <SectionAbout />
       <SectionFeatures />
       <SectionServices />
-      <SectionProjects />
+      <SectionProjects data={projects}/>
       <SectionTestimonial />
       {/*SECTIONS*/}
       <Footer />
