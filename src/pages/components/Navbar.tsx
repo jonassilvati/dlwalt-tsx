@@ -30,7 +30,7 @@ const Navbar = () => {
             <div className="logo ">
               <a className="d-block" href="/">
                 <img
-                  src="https://cdn.glitch.global/e3790b73-514c-45b3-a987-85c9a4b7481f/d%20walt%20logo%20nova.svg?v=1644971753268"
+                  src="logo.svg"
                   alt="D Walt Logo"
                 />
               </a>

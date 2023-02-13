@@ -22,8 +22,8 @@ const Footer = () => {
                 loading="lazy"
                 width="200px"
                 className="footer-logo"
-                src="https://cdn.glitch.global/e3790b73-514c-45b3-a987-85c9a4b7481f/d%20walt%20logo%20nova.svg?v=1644971753268"
-                alt="Constra"
+                src="logo.svg"
+                alt="D | Walt Logo"
               />
               <p>
                 Com mais de 5 anos de experiência no mercado, nós acreditamos em
@@ -81,7 +81,7 @@ const Footer = () => {
                 <ul className="list-arrow">
                 {services.map((services: any) => {
                     return (
-                      <li>
+                      <li key={services.data.id}>
                         <a href={"/servicos/" + services.data.id}>
                           {services.data.title}
                         </a>

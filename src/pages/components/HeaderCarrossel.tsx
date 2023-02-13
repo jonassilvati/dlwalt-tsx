@@ -7,7 +7,7 @@ const HeaderCarrossel = () => {
         className="banner-carousel-item"
         style={{
           backgroundImage:
-            "url(https://cdn.discordapp.com/attachments/893220475663187968/1072349661110730792/Sem_titulo-1.jpg)",
+            "url(images/header/header-1.jpg)",
         }}
       >
         <div className="slider-content text-left">
@@ -52,7 +52,7 @@ const HeaderCarrossel = () => {
         className="banner-carousel-item"
         style={{
           backgroundImage:
-            "url(https://cdn.discordapp.com/attachments/893220475663187968/1045785008331296848/eng_1.jpg)",
+            "url(images/header/header-2.jpg)",
         }}
       >
         <div className="slider-content">
@@ -85,7 +85,7 @@ const HeaderCarrossel = () => {
         className="banner-carousel-item"
         style={{
           backgroundImage:
-            "url(https://cdn.discordapp.com/attachments/893220475663187968/1045785467448205373/header_1.jpg)",
+            "url(images/header/header-3.jpg)",
         }}
       >
         <div className="slider-content text-left">
@@ -118,7 +118,7 @@ const HeaderCarrossel = () => {
         className="banner-carousel-item"
         style={{
           backgroundImage:
-            "url(https://cdn.discordapp.com/attachments/893220475663187968/1045785590425206784/house-eng-hero-anim_1.jpg)",
+            "url(images/header/header-4.jpg)",
         }}
       >
         <div className="slider-content">

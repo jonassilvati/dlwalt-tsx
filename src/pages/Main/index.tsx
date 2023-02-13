@@ -2,12 +2,14 @@ import React from "react";
 import { getAllItems } from "../../services/database";
 import Footer from "../components/Footer";
 import HeaderCarrossel from "../components/HeaderCarrossel";
+import LoadingServer from "../components/LoadingServer";
 import Navbar from "../components/Navbar";
 import SectionAbout from "./components/SectionAbout";
 import SectionFeatures from "./components/SectionFeatures";
 import SectionProjects from "./components/SectionProjects";
 import SectionServices from "./components/SectionServices";
 import SectionTestimonial from "./components/SectionTestimonial";
+
 
 const Main = () => {
   const [projects, setProjects] = React.useState<any[]>([]);

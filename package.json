@@ -1,6 +1,6 @@
 {
-  "name": "genios-typescript-website",
-  "version": "0.1.0",
+  "name": "dlwalt-tsx",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@react-firebase/database": "^0.3.11",
@@ -43,5 +43,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {}
 }

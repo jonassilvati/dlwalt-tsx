@@ -41,7 +41,7 @@ const Services = () => {
                             loading="lazy"
                             width={50}
                             height={50}
-                            src="https://cdn.discordapp.com/attachments/921106059375046706/922845448522330142/orcamento.svg"
+                            src="images/icons/orcamento.svg"
                             alt="service-icon"
                           />
                         </div>

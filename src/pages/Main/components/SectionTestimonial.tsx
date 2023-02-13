@@ -61,7 +61,7 @@ const SectionTestimonial = () => {
               <img
                 alt="Disponível no Google Play"
                 width={200}
-                src="https://play.google.com/intl/pt-BR/badges/static/images/badges/pt-br_badge_web_generic.png"
+                src="images/icons/gplay.png"
               />
             </a>
           </div>

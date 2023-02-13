@@ -27,7 +27,7 @@ const Vacancies = () => {
                 loading="lazy"
                 width={50}
                 height={50}
-                src="https://cdn.discordapp.com/attachments/921106059375046706/922848269921558528/assistencia.svg"
+                src="images/icons/assistencia.svg"
                 alt="service-icon"
               />
             </div>
@@ -66,7 +66,7 @@ const Vacancies = () => {
                 loading="lazy"
                 width={50}
                 height={50}
-                src="https://cdn.discordapp.com/attachments/921106059375046706/922848269921558528/assistencia.svg"
+                src="images/icons/assistencia.svg"
                 alt="service-icon"
               />
             </div>

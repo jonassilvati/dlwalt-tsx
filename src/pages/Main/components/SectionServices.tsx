@@ -16,7 +16,7 @@ const SectionServices = () => {
                   loading="lazy"
                   width={60}
                   height={60}
-                  src="https://cdn.discordapp.com/attachments/921106059375046706/922845448522330142/orcamento.svg"
+                  src="images/icons/orcamento.svg"
                   alt="service-icon"
                 />
               </div>
@@ -32,11 +32,10 @@ const SectionServices = () => {
             <div data-aos="fade-right" className="ts-service-box d-flex">
               <div className="ts-service-box-img">
                 <img
-                  loading="lazy"
                   width={60}
                   height={60}
-                  src="https://cdn.discordapp.com/attachments/921106059375046706/922846112702943272/manutencao.svg"
-                  alt="service-icon"
+                  src="images/icons/manutencao.svg"
+                  alt="service icon"
                 />
               </div>
               <div className="ts-service-box-info">
@@ -54,7 +53,7 @@ const SectionServices = () => {
                   loading="lazy"
                   width={60}
                   height={60}
-                  src="https://cdn.discordapp.com/attachments/921106059375046706/922847868186927124/instalacao.svg"
+                  src="images/icons/instalacao.svg"
                   alt="service-icon"
                 />
               </div>
@@ -76,7 +75,7 @@ const SectionServices = () => {
             <img
               loading="lazy"
               className="img-fluid"
-              src="https://cdn.discordapp.com/attachments/893220475663187968/1074187810208223312/tower.png"
+              src="images/tower.png"
               alt="Torre de energia"
             />
           </div>
@@ -87,7 +86,7 @@ const SectionServices = () => {
                   loading="lazy"
                   width={60}
                   height={60}
-                  src="https://cdn.discordapp.com/attachments/921106059375046706/922848269921558528/assistencia.svg"
+                  src="images/icons/assistencia.svg"
                   alt="service-icon"
                 />
               </div>
@@ -109,7 +108,7 @@ const SectionServices = () => {
                   loading="lazy"
                   width={60}
                   height={60}
-                  src="https://cdn.discordapp.com/attachments/921106059375046706/922848743953416202/eng-eletrica.svg"
+                  src="images/icons/eng-eletrica.svg"
                   alt="service-icon"
                 />
               </div>
@@ -131,7 +130,7 @@ const SectionServices = () => {
                   loading="lazy"
                   width={60}
                   height={60}
-                  src="https://cdn.discordapp.com/attachments/921106059375046706/922848743953416202/eng-eletrica.svg"
+                  src="images/icons/eng-eletrica.svg"
                   alt="service-icon"
                 />
               </div>
