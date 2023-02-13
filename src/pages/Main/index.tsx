@@ -17,7 +17,7 @@ const Main = () => {
       setProjects(response);
     });
   }, []);
-  
+
   return (
     <div className="body-inner">
       <Navbar />
@@ -29,7 +29,7 @@ const Main = () => {
       <SectionProjects data={projects}/>
       <SectionTestimonial />
       {/*SECTIONS*/}
-      <Footer />
+      <Footer/>
     </div>
   );
 };

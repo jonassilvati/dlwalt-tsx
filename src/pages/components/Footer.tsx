@@ -1,6 +1,16 @@
-import react from "react";
+import React from "react";
+import { getAllItems } from "../../services/database";
+import LoadingServer from "./LoadingServer";
 
 const Footer = () => {
+  const [services, setServices] = React.useState<any[]>([]);
+
+  React.useEffect(() => {
+    getAllItems("dataWebSite/services").then((response: any) => {
+      setServices(response);
+    });
+  }, []);
+
   return (
     <footer id="footer" className="footer bg-overlay">
       <div className="footer-main">
@@ -65,36 +75,21 @@ const Footer = () => {
             </div>
             <div className="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
               <h3 className="widget-title">Serviços</h3>
-              <ul className="list-arrow">
-                <li>
-                  <a href="/servicos/orcamento-e-proposta-de-sistema-fotovoltaico ">
-                    Orçamento e Proposta de Sistema Fotovoltaico
-                  </a>
-                </li>
-                <li>
-                  <a href="/servicos/manutencao-de-sistema-fotovoltaico ">
-                    Manutenção de Sistema Fotovoltaico
-                  </a>
-                </li>
-                <li>
-                  <a href="/servicos/instalacao-de-sistema-fotovoltaico ">
-                    Instalação de Sistema Fotovoltaico
-                  </a>
-                </li>
-                <li>
-                  <a href="/servicos/assistencia-de-sistema-fotovoltaico ">
-                    Assistência ao Sistema Fotovoltaico
-                  </a>
-                </li>
-                <li>
-                  <a href="/servicos/engenharia-eletrica ">
-                    Engenharia Elétrica
-                  </a>
-                </li>
-                <li>
-                  <a href="/servicos/contrucao-civil ">Construção Civil</a>
-                </li>
-              </ul>
+              {services.length === 0 ? (
+                <LoadingServer />
+              ) : (
+                <ul className="list-arrow">
+                {services.map((services: any) => {
+                    return (
+                      <li>
+                        <a href={"/servicos/" + services.data.id}>
+                          {services.data.title}
+                        </a>
+                      </li>
+                    );
+                  })}
+                </ul>
+              )}
             </div>
           </div>
         </div>

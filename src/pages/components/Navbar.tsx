@@ -12,8 +12,8 @@ const Navbar = () => {
           backgroundColor: "#f9f9f9",
         }}
       >
-        <a href="https://wa.me/+556892253306">
-          <i className="fa fa-mobile" /> Fale Conosco +55 (68) 99225-3306
+        <a href="https://wa.me/+5569993426687">
+          <i className="fa fa-mobile" /> Fale Conosco +55 69 99342-6687
         </a>
       </div>
 
