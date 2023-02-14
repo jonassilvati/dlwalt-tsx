@@ -11,7 +11,6 @@ import "swiper/css/pagination";
 import { Autoplay, EffectCoverflow, Pagination } from "swiper";
 
 import "./css/projects.css";
-import { getAllItems } from "../../../services/database";
 import LoadingServer from "../../components/LoadingServer";
 
 const SectionProjects = ({data}:any) => {
@@ -78,7 +77,7 @@ const SectionProjects = ({data}:any) => {
                       <div className="project-item-info">
                         <div className="project-item-info-content">
                           <h3 className="project-item-title">
-                            <a href="/projetos/Auto Posto Tucanos">
+                            <a href={"/projetos/"+project.key}>
                               {project.data.title}
                             </a>
                           </h3>

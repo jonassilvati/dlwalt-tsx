@@ -16,7 +16,7 @@ const SectionServices = () => {
                   loading="lazy"
                   width={60}
                   height={60}
-                  src="images/icons/orcamento.svg"
+                  src="/images/icons/orcamento.svg"
                   alt="service-icon"
                 />
               </div>
@@ -34,7 +34,7 @@ const SectionServices = () => {
                 <img
                   width={60}
                   height={60}
-                  src="images/icons/manutencao.svg"
+                  src="/images/icons/manutencao.svg"
                   alt="service icon"
                 />
               </div>
@@ -53,7 +53,7 @@ const SectionServices = () => {
                   loading="lazy"
                   width={60}
                   height={60}
-                  src="images/icons/instalacao.svg"
+                  src="/images/icons/instalacao.svg"
                   alt="service-icon"
                 />
               </div>
@@ -75,7 +75,7 @@ const SectionServices = () => {
             <img
               loading="lazy"
               className="img-fluid"
-              src="images/tower.png"
+              src="/images/tower.png"
               alt="Torre de energia"
             />
           </div>
@@ -86,7 +86,7 @@ const SectionServices = () => {
                   loading="lazy"
                   width={60}
                   height={60}
-                  src="images/icons/assistencia.svg"
+                  src="/images/icons/assistencia.svg"
                   alt="service-icon"
                 />
               </div>
@@ -108,7 +108,7 @@ const SectionServices = () => {
                   loading="lazy"
                   width={60}
                   height={60}
-                  src="images/icons/eng-eletrica.svg"
+                  src="/images/icons/eng-eletrica.svg"
                   alt="service-icon"
                 />
               </div>
@@ -130,7 +130,7 @@ const SectionServices = () => {
                   loading="lazy"
                   width={60}
                   height={60}
-                  src="images/icons/eng-eletrica.svg"
+                  src="/images/icons/eng-eletrica.svg"
                   alt="service-icon"
                 />
               </div>

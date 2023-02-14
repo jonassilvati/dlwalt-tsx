@@ -41,7 +41,7 @@ const Services = () => {
                             loading="lazy"
                             width={50}
                             height={50}
-                            src="images/icons/orcamento.svg"
+                            src="/images/icons/orcamento.svg"
                             alt="service-icon"
                           />
                         </div>

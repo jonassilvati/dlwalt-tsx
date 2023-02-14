@@ -30,7 +30,7 @@ const Navbar = () => {
             <div className="logo ">
               <a className="d-block" href="/">
                 <img
-                  src="logo.svg"
+                  src="/logo.svg"
                   alt="D Walt Logo"
                 />
               </a>

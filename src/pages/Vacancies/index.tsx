@@ -27,7 +27,7 @@ const Vacancies = () => {
                 loading="lazy"
                 width={50}
                 height={50}
-                src="images/icons/assistencia.svg"
+                src="/images/icons/assistencia.svg"
                 alt="service-icon"
               />
             </div>
@@ -66,7 +66,7 @@ const Vacancies = () => {
                 loading="lazy"
                 width={50}
                 height={50}
-                src="images/icons/assistencia.svg"
+                src="/images/icons/assistencia.svg"
                 alt="service-icon"
               />
             </div>

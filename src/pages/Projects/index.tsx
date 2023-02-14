@@ -99,11 +99,11 @@ const Projects = () => {
                         <div className="project-img-container">
                           <a
                             className="gallery-popup cboxElement"
-                            href="images/projects/project1.jpg"
+                            href="/images/projects/project1.jpg"
                           >
                             <img
                               className="img-fluid"
-                              src="images/projects/project1.jpg"
+                              src="/images/projects/project1.jpg"
                               alt="projectimage"
                             />
                             <span className="gallery-icon">
