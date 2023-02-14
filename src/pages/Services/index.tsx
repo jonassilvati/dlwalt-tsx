@@ -8,7 +8,7 @@ import Navbar from "../components/Navbar";
 const Services = () => {
   const [data, setData] = React.useState<any[]>([]);
   React.useEffect(() => {
-    getAllItems("dataWebSite/services").then((response: any) => {
+    getAllItems("dlwalt/services").then((response: any) => {
       setData(response);
     });
   }, []);

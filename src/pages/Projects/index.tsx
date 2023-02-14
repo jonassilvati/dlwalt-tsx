@@ -10,7 +10,7 @@ const Projects = () => {
   const [data, setData] = React.useState<any[]>([]);
 
   React.useEffect(() => {
-    getAllItems("dataWebSite/projects").then((response: any) => {
+    getAllItems("dlwalt/projects").then((response: any) => {
       console.log(response);
       setData(response);
     });
