@@ -74,12 +74,12 @@ const Navbar = () => {
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="/projetos">
+                      <a className="nav-link" href="/#projetos">
                         Projetos
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="/servicos">
+                      <a className="nav-link" href="/#servicos">
                         Serviços
                       </a>
                     </li>
@@ -92,9 +92,9 @@ const Navbar = () => {
                         Empresa <i className="fa fa-angle-down" />
                       </a>
                       <ul className="dropdown-menu" role="menu">
-                        <li>
+                        {/*<li>
                           <a href="/vagas">Trabalhe Conosco</a>
-                        </li>
+                        </li>*/}
                         <li className="dropdown-submenu">
                           <a
                             href="#"

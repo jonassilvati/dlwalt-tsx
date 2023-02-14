@@ -18,6 +18,8 @@ import Vacancies from './pages/Vacancies';
 import Bv from './pages/Integrations/Bv';
 import Contact from './pages/Contact';
 
+import NotFound from './pages/404';
+
 import reportWebVitals from './utils/reportWebVitals';
 
 const container = document.getElementById('root');
@@ -37,6 +39,7 @@ root.render(
         <Route path="/termos" element={<Terms />} />
         <Route path="/contato" element={<Contact />} />
         <Route path="/integracoes/banco-bv" element={<Bv />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

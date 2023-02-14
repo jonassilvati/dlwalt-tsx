@@ -15,7 +15,7 @@ import LoadingServer from "../../components/LoadingServer";
 
 const SectionProjects = ({data}:any) => {
   return (
-    <section id="project-area" className="project-area solid-bg">
+    <section id="projetos" className="project-area solid-bg">
       <div className="container">
         <div className="row text-center">
           <div className="col-lg-12">
