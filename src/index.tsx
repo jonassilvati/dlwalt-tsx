@@ -21,6 +21,9 @@ import Contact from './pages/Contact';
 import NotFound from './pages/404';
 
 import reportWebVitals from './utils/reportWebVitals';
+import VacanciesSingle from './pages/Vacancies/single';
+import Search from './pages/Search';
+import Faq from './pages/Faq';
 
 const container = document.getElementById('root');
 const root = createRoot(container!);
@@ -35,10 +38,13 @@ root.render(
         <Route path="/servicos" element={<Services />} />
         {/*<Route path="/servicos/:id" element={<ServicesSingle content={} />} /> */}
         <Route path="/vagas" element={<Vacancies />} />
+        <Route path="/vagas/:id" element={<VacanciesSingle />} />
+        <Route path="/faq" element={<Faq />} />
         <Route path="/politica" element={<Policy />} />
         <Route path="/termos" element={<Terms />} />
         <Route path="/contato" element={<Contact />} />
         <Route path="/integracoes/banco-bv" element={<Bv />} />
+        <Route path="/pesquisa" element={<Search />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

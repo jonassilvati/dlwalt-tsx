@@ -6,7 +6,7 @@ const Footer = () => {
   const [services, setServices] = React.useState<any[]>([]);
 
   React.useEffect(() => {
-    getAllItems("dlwalt/services").then((response: any) => {
+    getAllItems("dataWebSite/services").then((response: any) => {
       setServices(response);
     });
   }, []);

@@ -29,10 +29,7 @@ const Navbar = () => {
           >
             <div className="logo ">
               <a className="d-block" href="/">
-                <img
-                  src="/logo.svg"
-                  alt="D Walt Logo"
-                />
+                <img src="/logo.svg" alt="D Walt Logo" />
               </a>
             </div>
           </div>
@@ -92,9 +89,12 @@ const Navbar = () => {
                         Empresa <i className="fa fa-angle-down" />
                       </a>
                       <ul className="dropdown-menu" role="menu">
-                        {/*<li>
+                        <li>
                           <a href="/vagas">Trabalhe Conosco</a>
-                        </li>*/}
+                        </li>
+                        <li>
+                          <a href="/faq">F.A.Q</a>
+                        </li>
                         <li className="dropdown-submenu">
                           <a
                             href="#"
