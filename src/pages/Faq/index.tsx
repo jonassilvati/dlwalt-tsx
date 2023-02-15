@@ -7,7 +7,7 @@ const Faq = () => {
   const [data, setData] = React.useState<any[]>([]);
 
   React.useEffect(() => {
-    getAllItems("dlwalt/vacancies").then((response: any) => {
+    getAllItems("dlwalt/faq").then((response: any) => {
       console.log(response);
       setData(response);
     });
