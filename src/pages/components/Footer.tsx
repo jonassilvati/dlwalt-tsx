@@ -22,7 +22,7 @@ const Footer = () => {
                 loading="lazy"
                 width="200px"
                 className="footer-logo"
-                src="logo.svg"
+                src="/logo.svg"
                 alt="D | Walt Logo"
               />
               <p>
