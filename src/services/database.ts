@@ -27,3 +27,18 @@ export const getItems = async (path:any): Promise<any> => {
     return error;
   }
 };
+
+export const search = async (path:any, query:any): Promise<any> => {
+  try {
+    const response = await axios.get("https://api-dlwalt.glitch.me/search", {
+      params: {
+        path,
+        query,
+      },
+    });
+    return response.data;
+  } catch (error) {
+    console.error(error);
+    return error;
+  }
+};

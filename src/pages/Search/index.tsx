@@ -1,7 +1,8 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import { getAllItems } from "../../services/database";
+import { search } from "../../services/database";
 import Footer from "../components/Footer";
+import LoadingServer from "../components/LoadingServer";
 import Navbar from "../components/Navbar";
 
 const Search = () => {
@@ -9,12 +10,21 @@ const Search = () => {
   const query = new URLSearchParams(location.search).get("q");
 
   const [all, setAll] = React.useState<any>([]);
+  const [loading, setLoading] = React.useState<any>(true);
 
   React.useEffect(() => {
-   /* getAllItems(`dlwalt`).then((response: any) => {
-      setAll(response);
-      console.log(response);
-    });*/
+    setLoading(true);
+    let data: any[] = [];
+
+    search("dlwalt/faq", query).then((r) => {
+      console.log(r);
+      if ((Object.keys(r).length === 0)) {
+        data.push({ title: r.answer, url: `/faq` });
+      }
+    });
+
+    setAll(data);
+    setLoading(false);
   }, []);
 
   return (
@@ -28,13 +38,27 @@ const Search = () => {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-12">
-              <ul className="list-group" style={{ width: "100%" }}>
-                <li className="list-group-item">
-                  <a href="/vagas/">EM DESENVOLVIMENTO</a>
-                </li>
-              </ul>
-            </div>
+            {loading ? (
+              <LoadingServer />
+            ) : (
+              <div className="col-md-12">
+                {all.length === 0 ? (
+                  <div className="text-center">
+                    <h3>Sem resultados.</h3>
+                  </div>
+                ) : (
+                  <ul className="list-group" style={{ width: "100%" }}>
+                    {all.map((i: any) => {
+                      return (
+                        <li className="list-group-item">
+                          <a href={i.url}>{i.title}</a>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                )}
+              </div>
+            )}
           </div>
         </div>
       </section>
