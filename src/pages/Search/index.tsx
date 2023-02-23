@@ -2,6 +2,7 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import { search } from "../../services/database";
 import Footer from "../components/Footer";
+import HelmetHeader from "../components/HelmetHeader";
 import LoadingServer from "../components/LoadingServer";
 import Navbar from "../components/Navbar";
 
@@ -29,6 +30,11 @@ const Search = () => {
 
   return (
     <div className="body-inner">
+      <HelmetHeader
+        title={`Pesquisa ${query}`}
+        description="Um dos nossos grandes projetos!"
+        url={`pesquisa?q=${query}`}
+      />
       <Navbar />
       <section className="main-container">
         <div className="container">

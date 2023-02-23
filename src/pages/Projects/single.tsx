@@ -16,6 +16,7 @@ import "swiper/css/navigation";
 import "swiper/css/thumbs";
 
 import { FreeMode, Navigation, Thumbs } from "swiper";
+import HelmetHeader from "../components/HelmetHeader";
 
 const ProjectsSingle = () => {
   const [thumbsSwiper, setThumbsSwiper] = React.useState<any>();
@@ -31,6 +32,12 @@ const ProjectsSingle = () => {
 
   return (
     <div className="body-inner">
+      <HelmetHeader
+        title={`Projeto ${project.title}`}
+        description="Um dos nossos grandes projetos!"
+        image={project.media[0]}
+        url={`projetos/${project.key}`}
+      />
       <Navbar />
       <BannerHeading title={project.title} />
       <section id="main-container" className="main-container">

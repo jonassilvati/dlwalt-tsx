@@ -1,6 +1,13 @@
+import HelmetHeader from "../../components/HelmetHeader";
+
 const Bv = () => {
   return (
     <div id="myDiv" style={{ display: "block" }}>
+        <HelmetHeader
+        title={`Integração Banco BV`}
+        description="Simule aqui o seu financiamento com a D Walt!"
+        url={`integracoes/banco-bv`}
+      />
       <iframe
       title="Banco Bv"
         src="https://meufinanciamentosolar.com.br/iframe?token=5f07b609-3ac1-402f-99e4-b63f87eccb1e&origin=iframe"

@@ -2,6 +2,7 @@ import React from "react";
 import { getAllItems } from "../../services/database";
 import Footer from "../components/Footer";
 import HeaderCarrossel from "../components/HeaderCarrossel";
+import HelmetHeader from "../components/HelmetHeader";
 import Navbar from "../components/Navbar";
 import SectionAbout from "./components/SectionAbout";
 import SectionFeatures from "./components/SectionFeatures";
@@ -40,6 +41,10 @@ const Main = () => {
   return (
     <div className="body-inner">
       <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+      <HelmetHeader
+        title={`Página Principal`}
+        description="Somos a D | Walt Engenharia, empresa especializada em Energia Solar, entre no nosso site para nos conhecer melhor!"
+      />
       <Navbar />
       <HeaderCarrossel />
       {/*SECTIONS*/}

@@ -1,10 +1,15 @@
 import Footer from "../components/Footer";
+import HelmetHeader from "../components/HelmetHeader";
 import Navbar from "../components/Navbar";
 
 const Policy = () => {
   return (
     <div className="body-inner">
-       
+       <HelmetHeader
+        title={`Política de Privacidade`}
+        description="Tem alguma dúvida? Consulte esse documento."
+        url={`politica`}
+      />
       <Navbar />
       <section className="main-container">
         <div className="container">

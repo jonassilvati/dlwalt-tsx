@@ -1,10 +1,16 @@
 import BannerHeading from "../components/BannerHeading";
 import Footer from "../components/Footer";
+import HelmetHeader from "../components/HelmetHeader";
 import Navbar from "../components/Navbar";
 
 const Contact = () => {
   return (
     <div className="body-inner">
+        <HelmetHeader
+        title={`Contato`}
+        description="Entre em contato conosco a partir dos dados dessa página!"
+        url={`contato`}
+      />
       <Navbar />
       <BannerHeading title="Contato" />
       <section id="main-container" className="main-container">

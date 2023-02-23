@@ -1,6 +1,12 @@
+import HelmetHeader from "./components/HelmetHeader";
+
 const NotFound = () => {
   return (
     <section id="main-container" className="main-container">
+        <HelmetHeader
+        title={`Página não encontrada`}
+        description="Retorne para a página principal."
+      />
       <div className="container">
         <div className="row">
           <div className="col-12">

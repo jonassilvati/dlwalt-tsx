@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 
 import { getAllItems } from "../../services/database";
 import LoadingServer from "../components/LoadingServer";
+import HelmetHeader from "../components/HelmetHeader";
 
 const Projects = () => {
   const [data, setData] = React.useState<any[]>([]);
@@ -18,6 +19,11 @@ const Projects = () => {
 
   return (
     <div className="body-inner">
+      <HelmetHeader
+        title={`Conheça nossos projetos!`}
+        description="Explore nossa galeria e veja alguns dos diversos projetos que já fizemos."
+        url={`projetos`}
+      />
       <Navbar />
       <BannerHeading title="Projetos" />
       <section id="main-container" className="main-container">

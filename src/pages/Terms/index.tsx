@@ -1,9 +1,15 @@
 import Footer from "../components/Footer";
+import HelmetHeader from "../components/HelmetHeader";
 import Navbar from "../components/Navbar";
 
 const Terms = () => {
   return (
     <div className="body-inner">
+        <HelmetHeader
+        title={`Termos de Uso`}
+        description="Tem alguma dúvida? Consulte esse documento."
+        url={`termos`}
+      />
       <Navbar />
       <section id="main-container" className="main-container">
         <div className="container">

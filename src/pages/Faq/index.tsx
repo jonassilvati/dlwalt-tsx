@@ -1,6 +1,7 @@
 import React from "react";
 import { getAllItems } from "../../services/database";
 import Footer from "../components/Footer";
+import HelmetHeader from "../components/HelmetHeader";
 import Navbar from "../components/Navbar";
 
 const Faq = () => {
@@ -15,6 +16,11 @@ const Faq = () => {
 
   return (
     <div className="body-inner">
+      <HelmetHeader
+        title={`Perguntas Frequentes`}
+        description="Precisa de ajuda ou tem alguma dúvida, verifique nosso faq!"
+        url={`faq`}
+      />
       <Navbar />
       <section id="main-container" className="main-container">
         <div className="container">
