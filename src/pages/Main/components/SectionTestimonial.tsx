@@ -1,3 +1,5 @@
+import Reviews from "../../components/Reviews";
+
 const SectionTestimonial = () => {
   return (
     <section className="content dark-bg">
@@ -5,13 +7,7 @@ const SectionTestimonial = () => {
         <div className="row">
           <div className="col-lg-6">
             <h3 className="column-title" data-aos="zoom-out-right">Avaliações</h3>
-            <div
-              data-aos="fade-right"
-              id="testimonial-slide"
-              className="testimonial-slide"
-            >
-              <div className="elfsight-app-1538fdb7-22ac-4e64-8fc3-262296b93049" />
-            </div>
+            <Reviews />
           </div>
           <div className="col-lg-6 mt-5 mt-lg-0">
             <h3 className="column-title" data-aos="zoom-out-down">Já conhece o nosso app?</h3>
@@ -56,7 +52,7 @@ const SectionTestimonial = () => {
             </div>
             <a data-aos="fade-down-right"
               target="_blank"
-              href="https://play.google.com/store/apps/details?id=com.dlwalt.cliente&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+              href="https://play.google.com/store/apps/details?id=com.dlwalt.cliente&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" rel="noreferrer"
             >
               <img
                 alt="Disponível no Google Play"
