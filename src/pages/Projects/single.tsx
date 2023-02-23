@@ -26,7 +26,6 @@ const ProjectsSingle = () => {
   React.useEffect(() => {
     getItems(`dlwalt/projects/${id}`).then((response: any) => {
       setProject(response);
-      console.log(response);
     });
   }, [id]);
 
@@ -35,7 +34,6 @@ const ProjectsSingle = () => {
       <HelmetHeader
         title={`Projeto ${project.title}`}
         description="Um dos nossos grandes projetos!"
-        image={project.media[0]}
         url={`projetos/${project.key}`}
       />
       <Navbar />
