@@ -8,7 +8,6 @@ import "swiper/css/pagination";
 
 import "./css/reviews.css";
 
-
 const testemonials = [
   {
     name: "Girlanda Areal",
@@ -21,6 +20,19 @@ const testemonials = [
     text: "Empresa com um ótimo atendimento, serviços de qualidade e sempre preocupada com os clientes. Recomendo 👍",
     image:
       "https://lh3.googleusercontent.com/a-/ACB-R5SZqnSrTqy2_jQWiHahGigwHVW51WMRQvXmcLYMIuE=w36-h36-p-c0x00000000-rp-mo-br100",
+  },
+  {
+    name: "Val Soares Soares",
+    text: "Trabalho com excelência parabéns a equipe, atendimento no qual não deixa a desejar! Recomendo.",
+    image:
+      "https://lh3.googleusercontent.com/a-/ACB-R5QIM5OQts2XIdm_dGCkhRcUimnhPttIMaQyALE1=w36-h36-p-c0x00000000-rp-mo-br100",
+  },
+  
+  {
+    name: "Gislandi Silva",
+    text: "O trabalho deles é muito bom!!!",
+    image:
+      "https://lh3.googleusercontent.com/a/AGNmyxYo7GubIAITePDXQOLNAPif_Om3yt6y4M3DwYcR=w36-h36-p-c0x00000000-rp-mo-br100",
   },
 ];
 
