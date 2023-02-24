@@ -18,7 +18,7 @@ const SectionTestimonial = () => {
               <b>D | Walt Connect: Cliente</b>
             </h3>
             <p  data-aos="fade-down-left">Nele você pode:</p>
-            <ul>
+            <ul style={{paddingLeft: 0}}>
               <li data-aos="fade-right">Acompanhar seus projetos;</li>
               <li data-aos="fade-right">Estar notificado sobre tudo;</li>
               <li data-aos="fade-right">Visualizar todos os documentos do projeto;</li>
