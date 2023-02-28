@@ -12,7 +12,6 @@
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-    
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -47,10 +46,10 @@
       integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
       crossorigin=""
     />
-    <link
+    <!--<link
       href="https://luarrekcah.github.io/simple-chat-call-to-action/main.css"
       rel="stylesheet"
-    />
+    />-->
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -106,6 +105,25 @@
       integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
       crossorigin=""
     ></script>
+    <script type="text/javascript">
+      (function (n, r, l, d) {
+        try {
+          var h = r.head || r.getElementsByTagName("head")[0],
+            s = r.createElement("script");
+          s.defer = true;
+          s.setAttribute("type", "text/javascript");
+          s.setAttribute("src", l);
+          n.neuroleadId = d;
+          h.appendChild(s);
+        } catch (e) {}
+      })(
+        window,
+        document,
+        "https://cdn.leadster.com.br/neurolead/neurolead.min.js",
+        26058
+      );
+    </script>
+    <!--
     <script src="https://luarrekcah.github.io/simple-chat-call-to-action/main.js"></script>
     <script>
       chatPopup({
@@ -114,6 +132,6 @@
         link: "https://wa.me/+556892253306",
         timer: 7000,
       });
-    </script>
+    </script>-->
   </body>
 </html>
