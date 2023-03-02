@@ -10,10 +10,10 @@ const HeaderCarrossel = () => {
             "url(/images/header/header-1.jpg)",
         }}
       >
-        <div className="slider-content text-left">
+        <div className="slider-content">
           <div className="container h-100">
             <div className="row align-items-center h-100">
-              <div className="col-md-12">
+              <div className="col-md-12 text-center">
                 <h2 className="slide-title" data-animation-in="slideInLeft">
                   6 anos de excelência em
                 </h2>
@@ -88,10 +88,10 @@ const HeaderCarrossel = () => {
             "url(/images/header/header-3.jpg)",
         }}
       >
-        <div className="slider-content text-left">
+        <div className="slider-content">
           <div className="container h-100">
             <div className="row align-items-center h-100">
-              <div className="col-md-12">
+              <div className="col-md-12 text-center">
                 <h2 className="slide-title" data-animation-in="slideInLeft">
                   Orçamento
                 </h2>
