@@ -20,9 +20,12 @@ const SectionAbout = () => {
   return (
     <section id="como-funciona-energia-solar" className="facts-area dark-bg">
       <div className="container">
-        <h2 data-aos="fade-up">Depoimentos</h2>
-        <p data-aos="fade-down">Veja o que nossos clientes acham de nós!</p>
-       
+      <div className="row text-center">
+          <div className="col-12">
+            <h2 className="section-title" style={{fontSize: 14}}  data-aos="fade-up-right">Veja o que nossos clientes acham de nós!</h2>
+            <h3 className="section-sub-title" data-aos="fade-up-left">Depoimentos</h3>
+          </div>
+        </div>
           <Swiper
               slidesPerView={"auto"}
               centeredSlides={true}
