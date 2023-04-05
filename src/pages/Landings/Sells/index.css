@@ -22,7 +22,8 @@ body {
 }
 
 .btn {
-    margin: -216px 0px 0px 0px;
+    margin: -160px 0px 0px 0px;
+    display: block;
     position: relative;
 }
 
