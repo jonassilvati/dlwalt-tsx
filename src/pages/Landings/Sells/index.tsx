@@ -9,7 +9,7 @@ import "./index.css";
 
 const Button = () => {
   return (
-    <div className="btn pulse">
+    <div className="btn-sells pulse">
       <a href="https://wa.me/+556892253306">
         <img width={"80%"} src="/images/landings/sells/btn.png" />
       </a>
