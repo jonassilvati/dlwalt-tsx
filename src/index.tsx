@@ -24,6 +24,7 @@ import reportWebVitals from './utils/reportWebVitals';
 import VacanciesSingle from './pages/Vacancies/single';
 import Search from './pages/Search';
 import Faq from './pages/Faq';
+import Sells from './pages/Landings/Sells';
 
 const container = document.getElementById('root');
 const root = createRoot(container!);
@@ -45,6 +46,7 @@ root.render(
         <Route path="/contato" element={<Contact />} />
         <Route path="/integracoes/banco-bv" element={<Bv />} />
         <Route path="/pesquisa" element={<Search />} />
+        <Route path="/venda" element={<Sells />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

@@ -1,0 +1,51 @@
+body {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+@keyframes pulse {
+    from {
+      transform: scale(0.85);
+    }
+    50% {
+      transform: scale(0.9);
+    }
+    to {
+      transform: scale(0.85);
+    }
+  }
+
+.pulse {
+    animation-name: pulse ease-in;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.btn {
+    margin: -216px 0px 0px 0px;
+    position: relative;
+}
+
+
+
+@media only screen and (max-width: 260px) {
+    .btn {
+        margin: -100px 0px 0px 0px;
+    }
+  }
+
+
+@media only screen and (max-width: 330px) {
+    .btn {
+        margin: -180px 0px 0px 0px;
+    }
+  }
+
+
+@media only screen and (max-width: 767px) {
+    .art {
+      width: 100%;
+      height: auto;
+    }
+  }
+
