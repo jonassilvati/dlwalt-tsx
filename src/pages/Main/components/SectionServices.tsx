@@ -1,6 +1,6 @@
 const SectionServices = () => {
   return (
-    <section id="servicos" className="ts-service-area pb-0 dark-bg">
+    <section id="servicos" className="ts-service-area pb-0 dark-bg painel-bg">
       <div className="container">
         <div className="row text-center">
           <div className="col-12">
