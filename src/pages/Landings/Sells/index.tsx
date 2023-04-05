@@ -21,7 +21,7 @@ const Sells = () => {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 768) {
-        window.location.replace("https://www.dlwalt.com");
+        // window.location.replace("https://www.dlwalt.com");
       }
     };
     handleResize();
@@ -62,7 +62,7 @@ const Sells = () => {
                 />
                 <p style={{ marginBottom: 0 }}>POR APENAS</p>
                 <h1>R$12.279,50</h1>
-                <a className="btn-card" href="https://wa.me/+556892253306">
+                <a className="btn-card pulse" href="https://wa.me/+556892253306">
                   Comprar
                 </a>
                 <p>ou 84x de R$000,00 sob análise de crédito</p>
@@ -77,7 +77,7 @@ const Sells = () => {
                 />
                 <p style={{ marginBottom: 0 }}>POR APENAS</p>
                 <h1>R$12.279,50</h1>
-                <a className="btn-card" href="https://wa.me/+556892253306">
+                <a className="btn-card pulse" href="https://wa.me/+556892253306">
                   Comprar
                 </a>
                 <p>ou 84x de R$000,00 sob análise de crédito</p>
