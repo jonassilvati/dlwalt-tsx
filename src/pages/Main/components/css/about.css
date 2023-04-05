@@ -1,5 +1,5 @@
 
-.swiper-pagination-bullet {
+.pagination-bullet {
     width: 30px;
     height: 30px;
     text-align: center;
@@ -10,7 +10,7 @@
     background: rgba(255, 255, 255, 0.479);
   }
   
-  .swiper-pagination-bullet-active {
+  .pagination-bullet-active {
     color: #fff;
     background: #007aff;
   }

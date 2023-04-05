@@ -30,7 +30,7 @@ const Sells = () => {
   }, []);
 
   return (
-    <div>
+    <div className="main-content">
       <div className="image-container">
         <img className="art" src="/images/landings/sells/1.png" />
         <Button />
@@ -54,7 +54,7 @@ const Sells = () => {
             modules={[Pagination]}
           >
             <SwiperSlide>
-              <div className="card">
+              <div className="card-sells">
                 <h2>KIT 400kW</h2>
                 <img
                   className="card-img"
@@ -62,14 +62,14 @@ const Sells = () => {
                 />
                 <p style={{ marginBottom: 0 }}>POR APENAS</p>
                 <h1>R$12.279,50</h1>
-                <a className="btn-card pulse" href="https://wa.me/+556892253306">
+                <a className="btn-sells-card pulse" href="https://wa.me/+556892253306">
                   Comprar
                 </a>
                 <p>ou 84x de R$000,00 sob análise de crédito</p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="card">
+              <div className="card-sells">
                 <h2>KIT 400kW</h2>
                 <img
                   className="card-img"
@@ -77,7 +77,7 @@ const Sells = () => {
                 />
                 <p style={{ marginBottom: 0 }}>POR APENAS</p>
                 <h1>R$12.279,50</h1>
-                <a className="btn-card pulse" href="https://wa.me/+556892253306">
+                <a className="btn-sells-card pulse" href="https://wa.me/+556892253306">
                   Comprar
                 </a>
                 <p>ou 84x de R$000,00 sob análise de crédito</p>

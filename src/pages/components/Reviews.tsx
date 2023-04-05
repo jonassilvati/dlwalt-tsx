@@ -64,7 +64,7 @@ export default function Reviews() {
       >
         {testemonials.map((t) => {
           return (
-            <SwiperSlide className="reviewsSwiper-slide">
+            <SwiperSlide key={t.name} className="reviewsSwiper-slide">
               <div style={{ textAlign: "center", padding: "50px" }}>
                 <img style={{ margin: "0 auto" }} src={t.image} alt={t.name} />
                 <h3 style={{ paddingTop: "30px" }}>{t.name}</h3>

@@ -13,7 +13,7 @@ const SectionAbout = () => {
   const pagination = {
     clickable: true,
     renderBullet: function (index: number, className: string) {
-      return '<span class="' + className + '">' + (index + 1) + "</span>";
+      return `<span class="${className} pagination-bullet">${index + 1}</span>`;
     },
   };
 

@@ -1,4 +1,4 @@
-body {
+.main-content {
     background-color: #ffffff;
     text-align: center;
 }
@@ -21,7 +21,7 @@ body {
     animation-iteration-count: infinite;
 }
 
-.btn {
+.btn-sells {
     margin: -160px 0px 0px 0px;
     display: block;
     position: relative;
@@ -39,14 +39,15 @@ body {
   height: 100%;
 }
 
-.card {
+.card-sells {
+  background-color: white;
   margin-right: 25px;
   margin-left: 25px;
   border-radius: 20px;
   padding: 20px;
 }
 
-.btn-card {
+.btn-sells-card {
   background-color: #012891;
   color: white;
   padding-top: 10px;
@@ -54,17 +55,19 @@ body {
   border-radius: 20px;
   font-weight: 900;
   text-transform: uppercase;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 @media only screen and (max-width: 260px) {
-    .btn {
+    .btn-sells {
         margin: -100px 0px 0px 0px;
     }
   }
 
 
 @media only screen and (max-width: 330px) {
-    .btn {
+    .btn-sells {
         margin: -180px 0px 0px 0px;
     }
   }
@@ -78,11 +81,11 @@ body {
   }
 
   @media only screen and (min-width: 767px) {
-    .btn {
+    .btn-sells {
       width: 90%
     }
 
-    .card {
+    .card-sells {
       width: 400px;
     }
   }
