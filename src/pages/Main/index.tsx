@@ -1,4 +1,6 @@
 import React from "react";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
+
 import { getAllItems } from "../../services/database";
 import Footer from "../components/Footer";
 import HeaderCarrossel from "../components/HeaderCarrossel";
@@ -54,6 +56,14 @@ const Main = () => {
       <SectionProjects data={projects} />
       <SectionTestimonial />
       {/*SECTIONS*/}
+      <FloatingWhatsApp
+        phoneNumber="+556892253306"
+        accountName="Atendimento D | Walt"
+        placeholder="Olá! Preciso de um orçamento de 500kW"
+        chatMessage="Vamos realizar seu orçamento agora mesmo?"
+        statusMessage="Geralmente responde em 5 minutos"
+        avatar="https://cdn.discordapp.com/attachments/893220475663187968/1093602395415650314/316481495_1643357396086827_3975979139853710989_n.png"
+      />
       <Footer />
     </div>
   );
