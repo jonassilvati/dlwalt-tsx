@@ -1,10 +1,12 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { useEffect } from "react";
-import { Pagination } from "swiper";
+import { EffectCards, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
-import "swiper/css/pagination";
+//import "swiper/css/pagination";
+
+import "swiper/css/effect-cards";
 import "./index.css";
 
 const data = [
@@ -178,7 +180,8 @@ const Sells = () => {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 768) {
-        // window.location.replace("https://www.dlwalt.com");
+        alert("Essa página não é compatível com desktop");
+        window.location.replace("https://www.dlwalt.com");
       }
     };
     handleResize();
@@ -205,10 +208,12 @@ const Sells = () => {
         <img className="art" src="/images/landings/sells/4.png" />
         <div className="swiper-container swiper-prods">
           <Swiper
-            pagination={{
+            /*pagination={{
               dynamicBullets: true,
-            }}
-            modules={[Pagination]}
+            }}*/
+            effect={"cards"}
+            grabCursor={true}
+            modules={[EffectCards]}
           >
             {data.map((item) => {
               return (
@@ -219,7 +224,7 @@ const Sells = () => {
                       className="card-img"
                       src={
                         item.image === ""
-                          ? "https://www.aldo.com.br/cdn-cgi/image/fit=contain,format=auto,metadata=none,onerror=redirect,quality=70,width=2560/OldSite/images/196480_100223171143.jpg"
+                          ? "/images/landings/sells/produto.png"
                           : item.image
                       }
                     />
