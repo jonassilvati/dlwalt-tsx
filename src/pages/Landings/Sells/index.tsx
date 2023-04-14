@@ -180,8 +180,8 @@ const Sells = () => {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 768) {
-        alert("Essa página não é compatível com desktop");
-        window.location.replace("https://www.dlwalt.com");
+        /*alert("Essa página não é compatível com desktop");
+        window.location.replace("https://www.dlwalt.com");*/
       }
     };
     handleResize();
@@ -229,7 +229,7 @@ const Sells = () => {
                       }
                     />
                     <p style={{ marginBottom: 0 }}>POR APENAS</p>
-                    <h1>R${item.valueAvista}</h1>
+                    <h1>R${(Number(item.valueAvista.replace('.', '').replace(',', '.')) * 1.1).toFixed(2).replace(".", ",")}</h1>
                     <a
                       className="btn-sells-card pulse"
                       href={`https://api.whatsapp.com/send?phone=556892253306&text=${encodeURI(
