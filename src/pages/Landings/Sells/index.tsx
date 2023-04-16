@@ -1,10 +1,9 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { useEffect } from "react";
-import { EffectCards, Pagination } from "swiper";
+import { EffectCards } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
-//import "swiper/css/pagination";
 
 import "swiper/css/effect-cards";
 import "./index.css";
@@ -207,14 +206,7 @@ const Sells = () => {
       <div className="image-container">
         <img className="art" src="/images/landings/sells/4.png" />
         <div className="swiper-container swiper-prods">
-          <Swiper
-            /*pagination={{
-              dynamicBullets: true,
-            }}*/
-            effect={"cards"}
-            grabCursor={true}
-            modules={[EffectCards]}
-          >
+          <Swiper effect={"cards"} grabCursor={true} modules={[EffectCards]}>
             {data.map((item) => {
               return (
                 <SwiperSlide>
@@ -229,7 +221,16 @@ const Sells = () => {
                       }
                     />
                     <p style={{ marginBottom: 0 }}>POR APENAS</p>
-                    <h1>R${(Number(item.valueAvista.replace('.', '').replace(',', '.')) * 1.1).toFixed(2).replace(".", ",")}</h1>
+                    <h1>
+                      R$
+                      {(
+                        Number(
+                          item.valueAvista.replace(".", "").replace(",", ".")
+                        ) * 1.1
+                      )
+                        .toFixed(2)
+                        .replace(".", ",")}
+                    </h1>
                     <a
                       className="btn-sells-card pulse"
                       href={`https://api.whatsapp.com/send?phone=556892253306&text=${encodeURI(
@@ -244,6 +245,10 @@ const Sells = () => {
                         ? ""
                         : `ou 84x de R$${item.valueParcelado} sob análise de crédito`}
                     </p>
+                    <p></p>
+                    <p>
+                      ARRASTE <i className="fa fa-arrow-right"></i>
+                    </p>
                   </div>
                 </SwiperSlide>
               );
@@ -257,6 +262,33 @@ const Sells = () => {
       <div className="image-container">
         <img className="art" src="/images/landings/sells/f.png" />
         <Button />
+      </div>
+
+      <div>
+        <link
+          rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+        />
+        <a
+          href="https://wa.me/+556892253306"
+          style={{
+            position: "fixed",
+            width: "60px",
+            height: "60px",
+            bottom: "40px",
+            right: "170px",
+            backgroundColor: "#25d366",
+            color: "#FFF",
+            borderRadius: "50px",
+            textAlign: "center",
+            fontSize: "30px",
+            boxShadow: "1px 1px 2px #888",
+            zIndex: 1000,
+          }}
+          target="_blank" rel="noreferrer"
+        >
+          <i style={{ marginTop: "16px" }} className="fa fa-whatsapp" />
+        </a>
       </div>
     </div>
   );
