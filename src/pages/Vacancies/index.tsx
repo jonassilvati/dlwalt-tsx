@@ -53,7 +53,7 @@ const Vacancies = () => {
                           <h3 className="service-box-title-services-page">
                             <a href={"/vagas/" + v.key}>{v.data.title}</a>
                           </h3>
-                          <p>{v.data.desc}</p>
+                          <p>{v.data.desc.slice(0, 100) + "..."}</p>
                           <a
                             className="learn-more d-inline-block"
                             href={"/vagas/" + v.key}

@@ -30,7 +30,7 @@ const Contact = () => {
                 <div className="ts-service-box-content">
                   <h4>Endereço</h4>
                   <p>
-                    Rua Acácia, 1686, sala A, Setor 01 - Ariquemes - Rondônia /
+                    Av. Canaã, 2500 - Ariquemes - Rondônia /
                     CNPJ: 26.711.744/0001-08
                   </p>
                 </div>
@@ -43,7 +43,7 @@ const Contact = () => {
                 </span>
                 <div className="ts-service-box-content">
                   <h4>E-mail</h4>
-                  <p>contato@dlwalt.com</p>
+                  <p>contato@dlwalt.net</p>
                 </div>
               </div>
             </div>

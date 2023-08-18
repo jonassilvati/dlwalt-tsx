@@ -55,7 +55,7 @@ const Footer = () => {
               </div>
               <h3 className="widget-title">Endereço</h3>
               <p>
-                Rua Acácia, 1686, sala A, Setor 01 - Ariquemes - Rondônia /
+                Av. Canaã, 2500 - Ariquemes - Rondônia /
                 CNPJ: 26.711.744/0001-08
               </p>
             </div>

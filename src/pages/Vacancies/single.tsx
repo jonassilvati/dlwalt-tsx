@@ -66,25 +66,6 @@ const VacanciesSingle = () => {
                     })}
                   </ul>
                 </div>
-                <div className="widget">
-                  <div className="quote-item quote-border">
-                    <div className="quote-text-border">
-                      Nossos funcionários são nossa família.
-                    </div>
-                    <div className="quote-item-footer">
-                      <img
-                        loading="lazy"
-                        className="testimonial-thumb"
-                        src="https://cdn.discordapp.com/attachments/893220475663187968/1073780088203653180/317659495_705946724476566_8523849399887919370_n.png"
-                        alt="testimonial"
-                      />
-                      <div className="quote-item-info">
-                        <h3 className="quote-author">Walter Silva</h3>
-                        <span className="quote-subtext">CEO</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
             {/**POST EM SI */}
@@ -102,7 +83,11 @@ const VacanciesSingle = () => {
                     <h3 className="column-title-small">Sobre a Vaga</h3>
                     <p>{vacancie.resp}</p>
                     <ul className="list-arrow">
-                      <li>{vacancie.req}</li>
+                      {vacancie.req
+                        .split(";")
+                        .map((req: string, index: number) => (
+                          <li key={index}>{req}</li>
+                        ))}
                     </ul>
                   </div>
                   <div className="col-md-6 mt-5 mt-md-0">
@@ -161,7 +146,7 @@ const VacanciesSingle = () => {
                         </div>
                         <div
                           id="collapse1"
-                          className="collapse show"
+                          className="collapse"
                           aria-labelledby="heading1"
                           data-parent="#construction-accordion"
                         >
@@ -192,7 +177,7 @@ const VacanciesSingle = () => {
                         </div>
                         <div
                           id="collapse3"
-                          className="collapse show"
+                          className="collapse"
                           aria-labelledby="heading3"
                           data-parent="#construction-accordion"
                         >
@@ -217,7 +202,7 @@ const VacanciesSingle = () => {
                       <div className="call-to-action-btn">
                         <a
                           className="btn btn-primary"
-                          href="https://wa.me/+556892253306"
+                          href="https://wa.me/+556993009413"
                         >
                           Enviar Currículo
                         </a>
@@ -230,7 +215,7 @@ const VacanciesSingle = () => {
           </div>
         </div>
       </section>
-      
+
       <Footer />
     </div>
   );

@@ -57,7 +57,7 @@ const Main = () => {
       <SectionTestimonial />
       {/*SECTIONS*/}
       <FloatingWhatsApp
-        phoneNumber="+556892253306"
+        phoneNumber="+556993009413"
         accountName="Atendimento D | Walt"
         placeholder="Olá! Preciso de um orçamento de 500kW"
         chatMessage="Vamos realizar seu orçamento agora mesmo?"

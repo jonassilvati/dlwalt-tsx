@@ -168,7 +168,7 @@ const data = [
 const Button = () => {
   return (
     <div className="btn-sells pulse">
-      <a href="https://wa.me/+556892253306">
+      <a href="https://wa.me/+556993009413">
         <img width={"80%"} src="/images/landings/sells/btn.png" />
       </a>
     </div>
@@ -270,7 +270,7 @@ const Sells = () => {
           href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
         />
         <a
-          href="https://wa.me/+556892253306"
+          href="https://wa.me/+556993009413"
           style={{
             position: "fixed",
             width: "60px",

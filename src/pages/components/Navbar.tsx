@@ -12,8 +12,8 @@ const Navbar = () => {
           backgroundColor: "#f9f9f9",
         }}
       >
-        <a href="https://wa.me/+5569993426687">
-          <i className="fa fa-mobile" /> Fale Conosco +55 69 99393-1785
+        <a href="https://wa.me/+556993009413">
+          <i className="fa fa-mobile" /> Fale Conosco +55 69 9300-9413
         </a>
       </div>
 
@@ -42,8 +42,8 @@ const Navbar = () => {
               paddingBottom: 30,
             }}
           >
-            Projetos, laudos, consultoria e
-            <b style={{ color: "#00a859" }}> Execução!</b>
+            A MAIOR DO
+            <b style={{ color: "#00a859" }}> NORTE!</b>
           </h4>
         </div>
       </div>
