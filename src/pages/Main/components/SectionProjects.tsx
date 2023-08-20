@@ -52,7 +52,7 @@ const SectionProjects = ({data}:any) => {
             modules={[Autoplay, EffectCoverflow, Pagination]}
             className="mySwiper"
           >
-            {data.map((project:any) => {
+            {data.reverse().map((project:any) => {
               return (
                 <SwiperSlide key={project.key}>
                   <div

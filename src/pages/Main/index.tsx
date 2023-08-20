@@ -62,7 +62,7 @@ const Main = () => {
         placeholder="Olá! Preciso de um orçamento de 500kW"
         chatMessage="Vamos realizar seu orçamento agora mesmo?"
         statusMessage="Geralmente responde em 5 minutos"
-        avatar="https://cdn.discordapp.com/attachments/893220475663187968/1093602395415650314/316481495_1643357396086827_3975979139853710989_n.png"
+        avatar="https://cdn.discordapp.com/attachments/893220475663187968/1142942264751046787/361285748_1976901905980356_5673523601111169363_n.jpg"
       />
       <Footer />
     </div>

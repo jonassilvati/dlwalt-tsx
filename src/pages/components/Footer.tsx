@@ -4,8 +4,13 @@ import LoadingServer from "./LoadingServer";
 
 const Footer = () => {
   const [services, setServices] = React.useState<any[]>([]);
+  const [yearDifference, setYearDifference] = React.useState(0);
 
   React.useEffect(() => {
+    const currentYear = new Date().getFullYear();
+    const baseYear = 2016;
+    const difference = currentYear - baseYear;
+    setYearDifference(difference);
     getAllItems("dataWebSite/services").then((response: any) => {
       setServices(response);
     });
@@ -26,7 +31,7 @@ const Footer = () => {
                 alt="D | Walt Logo"
               />
               <p>
-                Com mais de 5 anos de experiência no mercado, nós acreditamos em
+                Com mais de {yearDifference} anos de experiência no mercado, nós acreditamos em
                 um serviço de atendimento aos clientes de altíssima qualidade –
                 mas também somos da opinião de que todos os nossos clientes
                 merecem vivenciar uma experiência de compra inesquecível, e é
