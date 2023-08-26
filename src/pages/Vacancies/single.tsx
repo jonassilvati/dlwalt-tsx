@@ -74,6 +74,7 @@ const VacanciesSingle = () => {
               </div>
               {/**POST EM SI */}
               <div className="col-xl-8 col-lg-8">
+                <img className="img-fluid" src={vacancie.banner || "https://www.ospcontabilidade.com.br/wp-content/uploads/2020/01/vendas.jpg"} alt="" />
                 <div className="content-inner-page">
                   <h2 className="column-title mrt-0">{vacancie.title}</h2>
                   <div className="row">
@@ -141,7 +142,7 @@ const VacanciesSingle = () => {
                                 type="button"
                                 data-toggle="collapse"
                                 data-target="#collapse1"
-                                aria-expanded="true"
+                                aria-expanded="false"
                                 aria-controls="collapse1"
                               >
                                 Treinamento
@@ -172,7 +173,7 @@ const VacanciesSingle = () => {
                                 type="button"
                                 data-toggle="collapse"
                                 data-target="#collapse3"
-                                aria-expanded="true"
+                                aria-expanded="false"
                                 aria-controls="collapse3"
                               >
                                 Bônus

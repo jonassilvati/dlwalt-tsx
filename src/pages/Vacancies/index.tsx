@@ -35,7 +35,7 @@ const Vacancies = () => {
                         <img
                           loading="lazy"
                           className="w-100"
-                          src="https://www.ospcontabilidade.com.br/wp-content/uploads/2020/01/vendas.jpg"
+                          src={v.data.banner || "https://www.ospcontabilidade.com.br/wp-content/uploads/2020/01/vendas.jpg"}
                           alt="vaga"
                         />
                       </div>
