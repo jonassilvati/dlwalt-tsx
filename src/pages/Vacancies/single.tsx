@@ -115,7 +115,7 @@ const VacanciesSingle = () => {
                                 aria-expanded="true"
                                 aria-controls="collapse0"
                               >
-                                Crescimento pessoal
+                                Crescimento pessoal 
                               </button>
                             </h2>
                           </div>
