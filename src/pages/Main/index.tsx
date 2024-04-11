@@ -50,7 +50,13 @@ const Main = () => {
       <Navbar />
       <HeaderCarrossel />
       {/*SECTIONS*/}
-      <SectionAbout />
+      {
+        /**
+         * DEPOIMENTOS 
+         * 
+         * <SectionAbout />
+         */
+      }
       <SectionFeatures />
       <SectionServices />
       <SectionProjects data={projects} />

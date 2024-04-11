@@ -13,7 +13,7 @@ const Navbar = () => {
         }}
       >
         <a href="https://wa.me/+556993009413">
-          <i className="fa fa-mobile" /> Fale Conosco +55 69 9300-9413
+          <i className="fa fa-mobile" /> Fale Conosco +55 69 2103-3893
         </a>
       </div>
 
