@@ -11,6 +11,7 @@ import SectionFeatures from "./components/SectionFeatures";
 import SectionProjects from "./components/SectionProjects";
 import SectionServices from "./components/SectionServices";
 import SectionTestimonial from "./components/SectionTestimonial";
+import SectionBYD from "./components/SectionBYD";
 
 const Main = () => {
   const [projects, setProjects] = React.useState<any[]>([]);
@@ -57,6 +58,7 @@ const Main = () => {
          * <SectionAbout />
          */
       }
+      <SectionBYD />
       <SectionFeatures />
       <SectionServices />
       <SectionProjects data={projects} />
