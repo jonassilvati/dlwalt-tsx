@@ -1,0 +1,33 @@
+
+.reviewsSwiper {
+  padding-top: 0;
+}
+
+.reviewsSwiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviewsSwiper-slide img {
+  display: block;
+  object-fit: cover;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+}
+
+.reviewsSwiper-slide i {
+  color: rgb(255, 255, 0);
+  width: 50px;
+  height: 50px;
+}
+
+.reviewsSwiper-slide p {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}

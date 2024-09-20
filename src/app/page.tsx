@@ -1,95 +1,78 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+"use client"
+
+import React from "react";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import HeaderCarrossel from "@/components/HeaderCarrossel";
+import SectionAbout from "./components/SectionAbout";
+import SectionFeatures from "./components/SectionFeatures";
+import SectionServices from "./components/SectionServices";
+import SectionProjects from "./components/SectionProjects";
+import SectionTestimonial from "./components/SectionTestimonial";
+import { getAllItems } from "@/services/database";
+import SectionBYD from "./components/SectionBYD";
+
+
 
 export default function Home() {
+  const [projects, setProjects] = React.useState<any[]>([]);
+  
+  const jsonLd = {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    name: "D | Walt Engenharia",
+    url: "https://www.dlwalt.com/",
+    logo: "/images/ogimages/index.jpg",
+    sameAs: [
+      "https://www.facebook.com/dlwalt",
+      "https://www.instagram.com/dlwalt.engenharia/",
+    ],
+    description:
+      "Somos a D | Walt Engenharia, empresa especializada em Energia Solar, entre no nosso site para nos conhecer melhor!",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: "https://www.dlwalt.com/pesquisa?q={search_term_string}",
+      "query-input": "required name=search_term_string",
+    },
+  };
+
+
+  React.useEffect(() => {
+    getAllItems("dlwalt/projects").then((response: any) => {
+      setProjects(response);
+    });
+
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.innerHTML = JSON.stringify(jsonLd);
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    <div className="body-inner">
+      <Navbar />
+      <HeaderCarrossel />
+      {/*SECTIONS*/}
+      <SectionBYD />
+      <SectionFeatures />
+      <SectionServices />
+      <SectionProjects data={projects} />
+      <SectionTestimonial />
+      {/*SECTIONS*/}
+      <FloatingWhatsApp
+        phoneNumber="+556892253306"
+        accountName="Atendimento D | Walt"
+        placeholder="Olá! Preciso de um orçamento de 500kW"
+        chatMessage="Vamos realizar seu orçamento agora mesmo?"
+        statusMessage="Geralmente responde em 5 minutos"
+        avatar="https://cdn.discordapp.com/attachments/893220475663187968/1093602395415650314/316481495_1643357396086827_3975979139853710989_n.png"
+      />
+      <Footer />
+    </div>
+  );
 }
