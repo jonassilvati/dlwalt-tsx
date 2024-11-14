@@ -134,6 +134,11 @@ const Navbar = () => {
                       </ul>
                     </li>
                     <li className="nav-item">
+                      <a className="nav-link" href="/calculadora">
+                        Energia solar
+                      </a>
+                    </li>
+                    <li className="nav-item">
                       <a className="nav-link" href="/contato">
                         contato
                       </a>

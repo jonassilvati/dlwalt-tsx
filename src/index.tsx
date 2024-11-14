@@ -25,6 +25,7 @@ import VacanciesSingle from './pages/Vacancies/single';
 import Search from './pages/Search';
 import Faq from './pages/Faq';
 import Sells from './pages/Landings/Sells';
+import Calculadora from './pages/Calculadora';
 
 const container = document.getElementById('root');
 const root = createRoot(container!);
@@ -34,6 +35,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Main />} />
+        <Route path="/calculadora" element={<Calculadora />} />
         <Route path="/projetos" element={<Projects />} />
          <Route path="/projetos/:id" element={<ProjectsSingle />} />
         <Route path="/servicos" element={<Services />} />
